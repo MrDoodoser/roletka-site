@@ -1,0 +1,32 @@
+<svg width="238" height="54" viewBox="0 0 238 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mark" x1="4" y1="3" x2="50" y2="51" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="0.42" stop-color="#1684E3"/>
+      <stop offset="1" stop-color="#F59E0B"/>
+    </linearGradient>
+    <linearGradient id="slat" x1="13" y1="15" x2="39" y2="39" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.98"/>
+      <stop offset="1" stop-color="#E0F2FE" stop-opacity="0.78"/>
+    </linearGradient>
+    <filter id="shadow" x="-8" y="-6" width="70" height="70" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#1684E3" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadow)">
+    <rect x="2" y="2" width="50" height="50" rx="16" fill="url(#mark)"/>
+    <rect x="2.75" y="2.75" width="48.5" height="48.5" rx="15.25" stroke="white" stroke-opacity="0.26" stroke-width="1.5"/>
+  </g>
+
+  <path d="M14 15.5H40" stroke="white" stroke-opacity="0.9" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M14 22.2H40" stroke="white" stroke-opacity="0.72" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M14 28.9H40" stroke="white" stroke-opacity="0.55" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M14 35.6H33.5" stroke="white" stroke-opacity="0.38" stroke-width="2.4" stroke-linecap="round"/>
+
+  <path d="M17.5 39V19H29.7C36.25 19 40.3 22.55 40.3 28.25C40.3 33.95 36.25 37.55 29.7 37.55H24.45V39H17.5ZM24.45 25.15V31.35H29.05C31.55 31.35 33.05 30.2 33.05 28.25C33.05 26.3 31.55 25.15 29.05 25.15H24.45Z" fill="url(#slat)"/>
+
+  <text x="66" y="33" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="950" letter-spacing="-1.05" fill="currentColor">Ролетка.Ру</text>
+  <path d="M67 41.5H160" stroke="currentColor" stroke-opacity="0.18" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="67" y="49" font-family="Inter, Arial, sans-serif" font-size="8.7" font-weight="900" letter-spacing="2.9" fill="currentColor" opacity="0.58">КРАСНОДАР</text>
+</svg>

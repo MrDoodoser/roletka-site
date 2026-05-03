@@ -1,0 +1,2 @@
+import { db } from '@/lib/db';import { NextResponse } from 'next/server';
+export async function POST(req:Request){const body=await req.json(); if(!body.name||!body.phone)return NextResponse.json({error:'name and phone required'},{status:400}); const lead=await db.lead.create({data:{name:String(body.name),phone:String(body.phone),message:String(body.message||''),source:String(body.source||'Сайт')}}); return NextResponse.json(lead)}

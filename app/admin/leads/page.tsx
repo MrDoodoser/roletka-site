@@ -1,0 +1,2 @@
+import { db } from '@/lib/db';import { requireAdmin } from '@/lib/auth';
+export default async function Page(){await requireAdmin(); const rows=await db.lead.findMany({orderBy:{createdAt:'desc'}}); return <div><h1 className="text-4xl font-black mb-6">Заявки</h1><table className="admin-table"><thead><tr><th>Дата</th><th>Имя</th><th>Телефон</th><th>Источник</th><th>Сообщение</th></tr></thead><tbody>{rows.map(r=><tr key={r.id}><td>{r.createdAt.toLocaleString('ru-RU')}</td><td>{r.name}</td><td>{r.phone}</td><td>{r.source}</td><td>{r.message}</td></tr>)}</tbody></table></div>}
